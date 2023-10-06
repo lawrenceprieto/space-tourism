@@ -7,13 +7,17 @@
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    padding: 0 60px;
+    padding-left: 50px;
+}
+
+.offcanvas {
+    background-color: #464957b7;
 }
 
 .navbar {
     background-color: #464957b7;
     margin: 50px 0;
-    padding: 25px 150px 25px 70px;
+    padding: 25px 150px 15px 70px;
 }
 
 .navbar ul {
@@ -31,4 +35,33 @@
     letter-spacing: 2px;
     color: white;
     font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+@media (max-width: 640px) {
+    .tab-desk {
+        display: none;
+    }
+    .header{
+        padding: 20px 15px;
+    }
+}
+  
+@media (min-width: 641px) and (max-width: 1007px) {
+    .mob {
+        display: none;
+    }
+    .navbar {
+        margin: 0;
+        padding: 35px 15px 15px 10px;
+    }
+    .navbar ul {
+        gap: 30px;
+    }
+}
+  
+@media (min-width: 1008px) {
+    .mob , .tab {
+        display: none;
+    }
 }
