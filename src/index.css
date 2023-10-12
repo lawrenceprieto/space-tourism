@@ -1,44 +1,35 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
 * {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
 }
 
-.banner img {
-  width: 100%;
-  height: auto;
-}
-
 @media (max-width: 640px) {
-  .desk , .tab {
-    display: none;
+  body {
+    background-image: url('/src/assets/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1007px) {
-  .mob , .desk {
-    display: none;
+  body {
+    background-image: url('/src/assets/home/background-home-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
   }
 }
 
 @media (min-width: 1008px) {
-  .mob , .tab {
-    display: none;
+  body {
+    background-image: url('/src/assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
   }
 }
