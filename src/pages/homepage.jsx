@@ -1,14 +1,20 @@
-import bgdesktop from "../assets/home/background-home-desktop.jpg";
-import bgtablet from "../assets/home/background-home-tablet.jpg";
-import bgmobile from "../assets/home/background-home-mobile.jpg";
+import "../styles/homepage.css";
 
 function Homepage() {
     return(
         <>
-            <div className="banner">
-                <img className="desk" src={bgdesktop} alt="bg-desktop" />
-                <img className="tab" src={bgtablet} alt="bg-tablet" />
-                <img className="mob" src={bgmobile} alt="bg-mobile" />
+            <div className="container-fluid banner-heading">
+                <div className="">
+                    <h3>so, you want to travel to</h3>
+                    <h1>space</h1>
+                    <p>
+                        lets face it; if you wan to go space, you might as well genuinely 
+                        go to outer space and not hover kind of on the edge of it. Well 
+                        sit back, and relax beacuse we'll give you a truly out of this 
+                        world experience!
+                    </p>
+                </div>
+                <div className="explore">explore</div>
             </div>
         </>
     );
