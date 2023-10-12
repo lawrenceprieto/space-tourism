@@ -25,6 +25,14 @@ function NavBar() {
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style={{fontSize: "28px"}}></button>
                     </div>
                     <div className="offcanvas-body">
+                        <div className="navbar">
+                            <ul>
+                                <li><Link to="/"><span>00</span> Home</Link></li>
+                                <li><Link to="/destination"><span>01</span> Destination</Link></li>
+                                <li><Link to="/crew"><span>02</span> Crew</Link></li>
+                                <li><Link to="/technology"><span>03</span> Technology</Link></li>
+                            </ul>
+                        </div>
                     </div>
                     </div>
                 </div>

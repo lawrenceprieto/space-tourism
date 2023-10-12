@@ -11,7 +11,7 @@
 }
 
 .offcanvas {
-    background-color: #464957b7;
+    background-color: #464957;
 }
 
 .navbar {
@@ -28,6 +28,7 @@
 .navbar ul li {
     list-style-type: none;
 }
+
 .navbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -44,6 +45,16 @@
     }
     .header{
         padding: 20px 15px;
+    }
+    .navbar {
+        background-color: transparent;
+        margin: 10px 0;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: self-start;
     }
 }
   
