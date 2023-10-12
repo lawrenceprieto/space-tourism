@@ -1,14 +1,12 @@
-import bgdesktop from "../assets/home/background-home-desktop.jpg";
-import bgtablet from "../assets/home/background-home-tablet.jpg";
-import bgmobile from "../assets/home/background-home-mobile.jpg";
+import "../styles/destination.css";
 
 function DestinationPage() {
     return(
         <>
-            <div className="banner">
-                <img className="desk" src={bgdesktop} alt="bg-desktop" />
-                <img className="tab" src={bgtablet} alt="bg-tablet" />
-                <img className="mob" src={bgmobile} alt="bg-mobile" />
+            <div className="body-dp">
+                <div className="container bg-dark" style={{}}>
+                    <h1 className="text-white">Destination Page</h1>
+                </div>
             </div>
         </>
     );
