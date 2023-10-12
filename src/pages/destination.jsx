@@ -59,7 +59,7 @@ function DestinationPage() {
                         <div className="img-cont">
                             <img src={state.imageSrc} className="imgsrc" alt="europa" />
                         </div>
-                        <div className="">
+                        <div className="dest-desc">
                             <div className="d-flex navs">
                                 {
                                     destinations.map((destination,index) => (
