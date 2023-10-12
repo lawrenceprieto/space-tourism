@@ -5,7 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     width: 100%;
     padding-left: 50px;
 }

@@ -53,17 +53,17 @@ function DestinationPage() {
     return(
         <>
             <div className="body-dp">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="headline"><span className="text-secondary">01</span> pick your destination</div>
-                    <div className="">
+                    <div className="dest-cont">
                         <div className="img-cont">
                             <img src={state.imageSrc} className="imgsrc" alt="europa" />
                         </div>
                         <div className="">
-                            <div className="d-flex gap-3 navs">
+                            <div className="d-flex navs">
                                 {
                                     destinations.map((destination,index) => (
-                                        <div className="navs" onClick={() => handleClick(destination)} key={index}>
+                                        <div className="" onClick={() => handleClick(destination)} key={index}>
                                             {destination.title}
                                         </div>
                                     ))
