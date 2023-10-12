@@ -3,7 +3,8 @@ import "../styles/homepage.css";
 function Homepage() {
     return(
         <>
-            <div className="container-fluid banner-heading">
+        <div className="body-hp">
+        <div className="container-fluid banner-heading">
                 <div className="">
                     <h3>so, you want to travel to</h3>
                     <h1>space</h1>
@@ -16,6 +17,7 @@ function Homepage() {
                 </div>
                 <div className="explore">explore</div>
             </div>
+        </div>
         </>
     );
 }
