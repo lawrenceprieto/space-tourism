@@ -1,7 +1,13 @@
+import "../styles/crew.css";
+
 function CrewPage() {
     return (
         <>
-            <h1>This is Crew pages</h1>
+            <div className="body-crew">
+                <div className="container">
+                    <h1>This is Crew pages</h1>
+                </div>
+            </div>
         </>
     );
 }
