@@ -3,6 +3,7 @@ import ansari from "../assets/crew/image-anousheh-ansari.png";
 import hurley from "../assets/crew/image-douglas-hurley.png";
 import shuttleworth from "../assets/crew/image-mark-shuttleworth.png";
 import glover from "../assets/crew/image-victor-glover.png";
+import { useState } from "react";
 
 function CrewPage() {
     
@@ -30,11 +31,28 @@ function CrewPage() {
         },
     ];
 
+    const [activeIndex, setActiveIndex] = useState(0);
+    const activeCrew = crews[activeIndex];
+
     return (
         <>
             <div className="body-crew">
                 <div className="container">
-                    <h1>This is Crew pages</h1>
+                    <div className="headline"><span className="text-secondary">02</span> meet your crew</div>
+                    <div className="">
+                        <div className="image-cont border-bottom p-0">
+                            <img src={activeCrew.image} className="crew-image" alt={activeCrew.name} />
+                        </div>
+                        <div className="navs">
+                            <div className="nav"></div>
+                            <div className="nav"></div>
+                            <div className="nav"></div>
+                            <div className="nav"></div>
+                        </div>
+                        <div className="role">{activeCrew.role}</div>
+                        <div className="name">{activeCrew.name}</div>
+                        <div className="about">{activeCrew.about}</div>
+                    </div>
                 </div>
             </div>
         </>
