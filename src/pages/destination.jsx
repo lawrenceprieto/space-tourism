@@ -38,16 +38,11 @@ function DestinationPage() {
         },
     ];
 
-    const [state, setState] = useState({
-        title: "Moon",
-        imageSrc: moon,
-        description: "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing site",
-        distance: "384,400 km",
-        travelTime: "3 days",
-    });
+    const [activeIndex, setActiveIndex] = useState(0);
+    const activeDestination = destinations[activeIndex];
 
-    function handleClick(destination) {
-        setState(destination);
+    function handleDestination(index) {
+      setActiveIndex(index);
     }
 
     return(
@@ -57,28 +52,28 @@ function DestinationPage() {
                     <div className="headline"><span className="text-secondary">01</span> pick your destination</div>
                     <div className="dest-cont">
                         <div className="img-cont">
-                            <img src={state.imageSrc} className="imgsrc" alt="europa" />
+                            <img src={activeDestination.imageSrc} className="imgsrc" alt="europa" />
                         </div>
                         <div className="dest-desc">
                             <div className="d-flex navs">
                                 {
                                     destinations.map((destination,index) => (
-                                        <div className="" onClick={() => handleClick(destination)} key={index}>
+                                        <div className={index === activeIndex ? "active" : "navs"} onClick={() => handleDestination(index)} key={index}>
                                             {destination.title}
                                         </div>
                                     ))
                                 }
                             </div>
-                            <div className="title">{state.title}</div>
-                            <p className="description">{state.description}</p>
+                            <div className="title">{activeDestination.title}</div>
+                            <div className="description">{activeDestination.description}</div>
                             <div className="distance-time border-top">
                                 <div>
                                     <h3>avg. distance</h3>
-                                    <h2>{state.distance}</h2>
+                                    <h2>{activeDestination.distance}</h2>
                                 </div>
                                 <div>
                                     <h3>est. travel time</h3>
-                                    <h2>{state.travelTime}</h2>
+                                    <h2>{activeDestination.travelTime}</h2>
                                 </div>
                             </div>
                         </div>
