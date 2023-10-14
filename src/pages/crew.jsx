@@ -42,7 +42,7 @@ function CrewPage() {
         <>
             <div className="body-crew">
                 <div className="container">
-                    <div className="headline"><span className="text-secondary">02</span> meet your crew</div>
+                    <div className="crew-headline"><span className="text-secondary">02</span> meet your crew</div>
                     <div className="lo">
                         <div className="image-cont border-bottom p-0">
                             <img src={activeCrew.image} className="crew-image" alt={activeCrew.name} />
