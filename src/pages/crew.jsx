@@ -34,6 +34,10 @@ function CrewPage() {
     const [activeIndex, setActiveIndex] = useState(0);
     const activeCrew = crews[activeIndex];
 
+    function handleCrew(index) {
+        setActiveIndex(index);
+    }
+
     return (
         <>
             <div className="body-crew">
@@ -43,15 +47,16 @@ function CrewPage() {
                         <div className="image-cont border-bottom p-0">
                             <img src={activeCrew.image} className="crew-image" alt={activeCrew.name} />
                         </div>
-                        <div className="navs">
-                            <div className="nav"></div>
-                            <div className="nav"></div>
-                            <div className="nav"></div>
-                            <div className="nav"></div>
+                        <div className="navs-crew">
+                            {
+                                crews.map((crew,index) => (
+                                    <div className={index === activeIndex ? "active-crew" : "nav-crew"} onClick={() => handleCrew(index)} key={index}></div>
+                                ))
+                            }
                         </div>
-                        <div className="role">{activeCrew.role}</div>
-                        <div className="name">{activeCrew.name}</div>
-                        <div className="about">{activeCrew.about}</div>
+                        <div className="crew-role">{activeCrew.role}</div>
+                        <div className="crew-name">{activeCrew.name}</div>
+                        <div className="crew-about">{activeCrew.about}</div>
                     </div>
                 </div>
             </div>

@@ -15,12 +15,15 @@
     max-width: 180px;
 }
 
-.navs {
+.navs-crew {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     padding: 20px 0;
 }
 
-.nav {
+.nav-crew {
     height: 15px;
     width: 15px;
     background-color: gray;
@@ -28,7 +31,7 @@
     cursor: pointer;
 }
 
-.role {
+.crew-role {
     font-family: 'Bellefair', serif;
     font-size: 18px;
     color: gray;
@@ -36,7 +39,7 @@
     text-align: center;
 }
 
-.name {
+.crew-name {
     font-family: 'Bellefair', serif;
     font-size: 25px;
     color: #FFFFFF;
@@ -44,11 +47,23 @@
     text-align: center;
 }
 
-.about {
+.crew-about {
     font-size: 16px;
     color: #D0D6F9;
     text-align: center;
     margin-top: 15px;
+}
+
+.active-crew {
+    height: 15px;
+    width: 15px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-crew:hover {
+    background-color: gainsboro;
 }
 
 @media (max-width: 640px) {
