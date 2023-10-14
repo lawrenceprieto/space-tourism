@@ -82,6 +82,34 @@
         background-size: cover;
         width: 100%;
     }
+    .lo {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .det-lo {
+        padding: 0 40px;
+    }
+    .image-cont {
+        margin-top: 0;
+    }
+    .crew-image {
+        min-width: 200px;
+        max-width: 300px;
+    }
+    .container {
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+    .crew-role {
+        font-size: 22px;
+    }
+    .crew-name {
+        font-size: 28px;
+    }
+    .navs-crew {
+        padding: 40px 0;
+    }
 }
 
 @media (min-width: 1008px) {
