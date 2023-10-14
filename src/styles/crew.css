@@ -31,12 +31,15 @@
     cursor: pointer;
 }
 
+.det-lo {
+    text-align: center;
+}
+
 .crew-role {
     font-family: 'Bellefair', serif;
     font-size: 18px;
     color: gray;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .crew-name {
@@ -44,13 +47,11 @@
     font-size: 25px;
     color: #FFFFFF;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .crew-about {
     font-size: 16px;
     color: #D0D6F9;
-    text-align: center;
     margin-top: 15px;
 }
 
@@ -109,6 +110,10 @@
     }
     .navs-crew {
         padding: 40px 0;
+    }
+    .dest-lo {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 

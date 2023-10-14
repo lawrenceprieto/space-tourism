@@ -47,17 +47,19 @@ function CrewPage() {
                         <div className="image-cont border-bottom p-0">
                             <img src={activeCrew.image} className="crew-image" alt={activeCrew.name} />
                         </div>
-                        <div className="navs-crew">
-                            {
-                                crews.map((crew,index) => (
-                                    <div className={index === activeIndex ? "active-crew" : "nav-crew"} onClick={() => handleCrew(index)} key={index}></div>
-                                ))
-                            }
-                        </div>
-                        <div className="det-lo">
-                            <div className="crew-role">{activeCrew.role}</div>
-                            <div className="crew-name">{activeCrew.name}</div>
-                            <div className="crew-about">{activeCrew.about}</div>
+                        <div className="dest-lo">
+                            <div className="navs-crew">
+                                {
+                                    crews.map((crew,index) => (
+                                        <div className={index === activeIndex ? "active-crew" : "nav-crew"} onClick={() => handleCrew(index)} key={index}></div>
+                                    ))
+                                }
+                            </div>
+                            <div className="det-lo">
+                                <div className="crew-role">{activeCrew.role}</div>
+                                <div className="crew-name">{activeCrew.name}</div>
+                                <div className="crew-about">{activeCrew.about}</div>
+                            </div>
                         </div>
                     </div>
                 </div>
