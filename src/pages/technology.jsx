@@ -1,7 +1,13 @@
+import "../styles/technology.css";
+
 function TechnologyPage() {
     return (
         <>
-            <h1>This is technology page</h1>
+            <div className="body-tech">
+                <div className="container-fluid">
+                    <h1>This is technology page</h1>                
+                </div>
+            </div>
         </>
     );
 }
