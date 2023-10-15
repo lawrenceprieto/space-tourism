@@ -1,28 +1,27 @@
-.banner-heading {
-    color: #D0D6F9;
-    text-wrap: wrap;
-    display: flex;
-    align-items: center;
-    height: 100vh;
+.home-det {
+    text-align: center;
+    padding: 130px 15px 100px 15px;
 }
 
-.banner-heading h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28x;
-    text-transform: uppercase;
-    letter-spacing: 4.75px;
-}
-
-.banner-heading h1 {
-    font-family: 'Bellefair', serif;
-    font-size: 150px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.banner-heading p {
+.home-heading1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
+    letter-spacing: 2px;
+    color: #D0D6F9;
+    text-transform: uppercase;
+}
+
+.home-heading2 {
+    font-family: 'Bellefair', serif;
+    font-size: 75px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.home-subhead {
+    color: #d0d6f9bd;
+    font-size: 16px;
 }
 
 .explore {
@@ -31,145 +30,18 @@
     text-transform: uppercase;
     color: black;
     background-color: #ffffff;
+    width: 170px;
+    max-width: 170px;
+    min-width: 170px;
+    margin: 0 auto;
     border-radius: 50%;
-    padding: 80px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 60px 30px;
     cursor: pointer;
+    text-align: center;
 }
 
 .explore:hover {
     border: #D0D6F9;
-}
-
-@media (max-width: 414px) {
-    .banner-heading {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 150px;
-    }
-
-    .banner-heading h1 {
-        font-size: 90px;
-    }
-
-    .banner-heading h3 {
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-
-    .banner-heading p {
-        font-size: 16px;
-    }
-    .explore {
-        width: 30%;
-        padding: 60px 90px;
-        margin-top: 50px;       
-    }
-}
-
-@media (min-width: 415px) and (max-width: 528px) {
-    .banner-heading {
-        flex-direction: column;
-        text-align: center;
-        padding: 200px 50px 0 50px;
-    }
-    .banner-heading h1 {
-        font-size: 90px;
-    }
-    .banner-heading h3 {
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-    .banner-heading p {
-        font-size: 16px;
-    }
-    .explore {
-        width: 30%;
-        padding: 60px 90px;
-        margin-top: 120px;  
-    }
-}
-
-@media (min-width: 529px) and (max-width: 640px) {
-    .banner-heading {
-        flex-direction: column;
-        text-align: center;
-        padding: 200px 60px 0 60px;
-    }
-    .banner-heading h1 {
-        font-size: 120px;
-    }
-    .banner-heading h3 {
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-    .banner-heading p {
-        font-size: 16px;
-    }
-    .explore {
-        width: 40%;
-        padding: 60px 90px;
-        margin-top: 120px; 
-    }
-}
-  
-@media (min-width: 641px) and (max-width: 755px) {
-    .banner-heading {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 200px;
-        padding: 200px 60px 0 60px;
-        height: 100vh;
-    }
-    .explore {
-        margin-top: 50px;
-        width: 50%;
-        padding: 80px 90px;
-    }
-}
-
-@media (min-width: 756px) and (max-width: 1007px) {
-    .banner-heading {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 200px;
-        padding: 200px 60px 0 60px;
-        height: 100vh;
-    }
-    .explore {
-        margin-top: 50px;
-        width: 40%;
-        padding: 80px 90px;
-    }
-}
-  
-@media (min-width: 1008px) {
-    .banner-heading {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 200px;
-    }
-
-    .banner-heading h1 {
-        font-size: 150px;
-    }
-
-    .banner-heading h3 {
-        font-size: 28px;
-    }
-
-    .banner-heading p {
-        font-size: 18px;
-        width: 400px;
-    }
-    .explore {
-        width: 20%;
-        padding: 80px 10px;
-    }
 }
 
 @media (max-width: 640px) {
@@ -177,7 +49,6 @@
         background-image: url('/src/assets/home/background-home-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
         width: 100%;
     }
 }
@@ -187,8 +58,18 @@
         background-image: url('/src/assets/home/background-home-tablet.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
-        width: 100vw;
+        width: 100%;
+    }
+    .home-det {
+        text-align: center;
+        padding: 200px 15px 100px 15px;
+    }
+    .home-heading2 {
+        font-size: 120px;
+    }
+    .home-subhead {
+        width: 50%;
+        margin: 0 auto;
     }
 }
   
@@ -196,8 +77,33 @@
     .body-hp {
         background-image: url('/src/assets/home/background-home-desktop.jpg');
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
+        background-size: auto;
         width: 100vw;
+    }
+    .home-det {
+        text-align: start;
+        width: 40%;
+    }
+    .home-dest {
+        padding: 120px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .home-heading1 {
+        font-size: 25px;
+        letter-spacing: 4px;
+    }
+    .home-heading2 {
+        font-size: 150px;
+    }
+    .home-subhead {
+        width: 400px;
+    }
+    .explore {
+        margin: 0;
+        min-width: 200px;
+        max-width: 200px;
+        padding: 80px 50px;
     }
 }
