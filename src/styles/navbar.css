@@ -63,7 +63,7 @@
 }
 
 .active-navbar {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     border-bottom: 3px solid white;
 }
 
@@ -110,7 +110,7 @@
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(12.5px);
         -webkit-backdrop-filter: blur(12.5px);
-        padding: 30px 120px 0 100px;
+        padding: 25px 120px 0 100px;
     }
     .navbar ul {
         flex-direction: row;
@@ -119,7 +119,7 @@
         margin: 0;
     }
     .navbar ul li {
-        padding-bottom: 30px;
+        padding-bottom: 25px;
     }
     .navbar ul li a {
         text-wrap: nowrap;
