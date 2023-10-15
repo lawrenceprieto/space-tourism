@@ -40,22 +40,27 @@ function TechnologyPage() {
             <div className="body-tech">
                 <div className="container-fluid pb-5">
                     <div className="tech-headline"><span className="text-secondary">03</span> space launch 101</div>
-                    <div className="tech-img-cont">
-                        <img src={activeTech.techImgLandscape} className="tech-image" alt="spaceport-landscape" />
-                    </div>
-                    <div className="tech-navs">
-                        {
-                            techs.map((tech,index) => (
-                                <div className={index === activeIndex ? "tech-nav-active" : "tech-nav"} 
-                                    onClick={() => handleTechDetails(index)} key={index}>{index + 1}
-                                </div>
-                            ))
-                        }
-                    </div>
-                    <div className="tech-dets">
-                        <div className="terminology">the terminology...</div>
-                        <div className="tech-name">{activeTech.techName}</div>
-                        <div className="tech-about">{activeTech.techAbout}</div>
+                    <div className="tech-cont-lo">
+                        <div className="tech-img-cont">
+                            <img src={activeTech.techImgLandscape} className="tech-image mob-tab" alt="spaceport-landscape" />
+                            <img src={activeTech.techImgPortrait} className="tech-image dest" alt="spaceport-landscape" />
+                        </div>
+                        <div className="tech-det-lo">
+                            <div className="tech-navs">
+                                {
+                                    techs.map((tech,index) => (
+                                        <div className={index === activeIndex ? "tech-nav-active" : "tech-nav"} 
+                                            onClick={() => handleTechDetails(index)} key={index}>{index + 1}
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                            <div className="tech-dets">
+                                <div className="terminology">the terminology...</div>
+                                <div className="tech-name">{activeTech.techName}</div>
+                                <div className="tech-about">{activeTech.techAbout}</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

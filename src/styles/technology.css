@@ -72,6 +72,9 @@
         background-size: cover;
         width: 100vw;
     }
+    .dest {
+        display: none;
+    }
 }
 @media (min-width: 641px) and (max-width: 1007px) {
     .body-tech {
@@ -79,6 +82,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100vw;
+    }
+    .dest {
+        display: none;
     }
     .tech-headline {
         text-align: start;
@@ -94,7 +100,49 @@
         background-image: url('/src/assets/technology/background-technology-desktop.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
         width: 100vw;
+    }
+    .mob-tab {
+        display: none;
+    }
+    .tech-headline {
+        padding-top: 180px;
+        padding-left: 100px;
+        text-align: start;
+        font-size: 25px;
+    }
+    .tech-cont-lo {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 120px;
+    }
+    .tech-det-lo {
+        display: flex;
+        padding-left: 80px;
+        gap: 80px
+    }
+    .tech-navs {
+        flex-direction: column;
+    }
+    .tech-image {
+        height: 400px;
+        width: 400px;
+    }
+    .tech-dets {
+        text-align: start;
+    }
+    .tech-nav {
+        padding: 15px 30px;
+        font-size: 25px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .tech-nav-active {
+        padding: 15px 30px;
+        font-size: 25px;
+    }
+    .tech-name {
+        font-size: 40px;
     }
 }
