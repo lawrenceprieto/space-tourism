@@ -4,7 +4,7 @@ function Homepage() {
     return(
         <>
             <div className="body-hp">
-                <div className="container-fluid" style={{paddingBottom: "250px"}}>
+                <div className="container-fluid pb-5">
                     <div className="home-dest">
                         <div className="home-det">
                             <div className="home-heading1">so, you want to travel to</div>
