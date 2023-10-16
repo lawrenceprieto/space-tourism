@@ -48,8 +48,8 @@ function DestinationPage() {
     return(
         <>
             <div className="body-dp">
-                <div className="container-fluid">
-                    <div className="headline"><span className="text-secondary">01</span> pick your destination</div>
+                <div className="container-fluid pb-5">
+                    <div className="dp-headline"><span className="dp-headline-count">01</span> pick your destination</div>
                     <div className="dest-cont">
                         <div className="img-cont">
                             <img src={activeDestination.imageSrc} className="imgsrc" alt="europa" />
@@ -65,10 +65,10 @@ function DestinationPage() {
                                 }
                             </div>
                             <div className="title">{activeDestination.title}</div>
-                            <div className="description">{activeDestination.description}</div>
-                            <div className="distance-time border-top">
+                            <div className="dp-description">{activeDestination.description}</div>
+                            <div className="distance-time">
                                 <div>
-                                    <h3>avg. distance</h3>
+                                    <h3 className="distance">avg. distance</h3>
                                     <h2>{activeDestination.distance}</h2>
                                 </div>
                                 <div>
