@@ -41,7 +41,7 @@
 }
 
 .explore:hover {
-    border: #D0D6F9;
+    outline: #838696bd solid 50px;
 }
 
 @media (max-width: 640px) {
