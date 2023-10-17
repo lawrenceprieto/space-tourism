@@ -1,8 +1,3 @@
-.container {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
 .crew-headline {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
@@ -10,9 +5,21 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
+    padding: 100px 0 0 0;
 }
 
-.image-cont {
+.crew-headline-count {
+    font-weight: 900;
+    font-size: 18px;
+    color: gray;
+    margin-right: 5px;
+}
+
+.crew-lo {
+    padding: 0 15px 0 15px;
+}
+
+.crew-image-cont {
     margin-top: 40px;
     text-align: center;
 }
@@ -24,15 +31,15 @@
     max-width: 180px;
 }
 
-.navs-crew {
+.crew-navs {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
-.nav-crew {
+.crew-nav {
     height: 15px;
     width: 15px;
     background-color: gray;
@@ -40,8 +47,9 @@
     cursor: pointer;
 }
 
-.det-lo {
+.crew-details-lo {
     text-align: center;
+    padding-bottom: 80px;
 }
 
 .crew-role {
@@ -72,7 +80,7 @@
     cursor: pointer;
 }
 
-.nav-crew:hover {
+.crew-nav:hover {
     background-color: gainsboro;
 }
 
@@ -92,20 +100,32 @@
         background-size: cover;
         width: 100%;
     }
-    .lo {
-        margin-top: 50px;
+    .crew-headline {
+        text-align: left;
+        font-size: 20px;
+        padding: 130px 0 0 20px;
+    }
+    .crew-headline-count {
+        font-size: 20px;
+    }
+    .crew-navs {
+        padding: 40px 0;
+    }
+    .crew-lo {
         display: flex;
         flex-direction: column-reverse;
     }
-    .det-lo {
-        padding: 0 40px;
+    .crew-details-lo {
+        margin: 50px 0 0 0;
+        padding: 0 100px;
     }
-    .image-cont {
+    .crew-image-cont {
         margin-top: 0;
     }
     .crew-image {
-        min-width: 200px;
-        max-width: 300px;
+        height: 450px;
+        min-width: 400px;
+        max-width: 450px;
     }
     .container {
         padding-top: 100px;
@@ -113,14 +133,13 @@
     }
     .crew-role {
         font-size: 22px;
+        letter-spacing: 1px;
     }
     .crew-name {
         font-size: 28px;
+        letter-spacing: 2px;
     }
-    .navs-crew {
-        padding: 40px 0;
-    }
-    .dest-lo {
+    .crew-dest-lo {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -136,43 +155,47 @@
         background-size: cover;
         width: 100%;
     }
-    .lo {
+    .crew-headline {
+        text-align: start;
+        font-size: 22px;
+        padding: 160px 0 20px 110px;
+    }
+    .crew-headline-count {
+        font-size: 22px;
+    }
+    .crew-lo {
         display: flex;
         flex-direction: row-reverse;
-        gap: 20px;
+        margin: 0 0 0 110px;
+        padding: 0;
+        /* padding: 0 0 0 110px; */
     }
-    .det-lo {
+    .crew-details-lo {
         text-align: start;
+        padding: 0;
     }
-    .dest-lo {
+    .crew-dest-lo {
         display: flex;
         flex-direction: column-reverse;
-        gap: 60px;
-        justify-content: start;
+        justify-content: center;
         align-items: start;
-        margin-top: 60px;
-    }
-    .container {
-        padding: 180px 40px 0 40px;
+        gap: 20px;
     }
     .crew-image {
         height: 450px;
-        min-width: 400px;
-        max-width: 400px;
+        min-width: 450px;
+        max-width: 450px;
+    }
+    .crew-image-cont {
+        margin: 0 50px 0 0;
     }
     .crew-role {
         font-size: 30px;
     }
     .crew-name {
-        text-wrap: nowrap;
         font-size: 42px;
     }
     .crew-about {
-        padding-right: 150px;
         font-size: 16px;
-    }
-    .crew-headline {
-        font-size: 22px;
-        text-align: start;
     }
 }

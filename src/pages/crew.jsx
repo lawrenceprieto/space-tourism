@@ -41,21 +41,21 @@ function CrewPage() {
     return (
         <>
             <div className="body-crew">
-                <div className="container">
-                    <div className="crew-headline"><span className="text-secondary">02</span> meet your crew</div>
-                    <div className="lo">
-                        <div className="image-cont border-bottom p-0">
+                <div className="container-fluid">
+                    <div className="crew-headline"><span className="crew-headline-count">02</span> meet your crew</div>
+                    <div className="crew-lo">
+                        <div className="crew-image-cont border-bottom p-0">
                             <img src={activeCrew.image} className="crew-image" alt={activeCrew.name} />
                         </div>
-                        <div className="dest-lo">
-                            <div className="navs-crew">
+                        <div className="crew-dest-lo">
+                            <div className="crew-navs">
                                 {
                                     crews.map((crew,index) => (
-                                        <div className={index === activeIndex ? "active-crew" : "nav-crew"} onClick={() => handleCrew(index)} key={index}></div>
+                                        <div className={index === activeIndex ? "active-crew" : "crew-nav"} onClick={() => handleCrew(index)} key={index}></div>
                                     ))
                                 }
                             </div>
-                            <div className="det-lo">
+                            <div className="crew-details-lo">
                                 <div className="crew-role">{activeCrew.role}</div>
                                 <div className="crew-name">{activeCrew.name}</div>
                                 <div className="crew-about">{activeCrew.about}</div>
