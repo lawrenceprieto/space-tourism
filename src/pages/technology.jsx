@@ -39,7 +39,7 @@ function TechnologyPage() {
         <>
             <div className="body-tech">
                 <div className="container-fluid pb-5">
-                    <div className="tech-headline"><span className="text-secondary">03</span> space launch 101</div>
+                    <div className="tech-headline"><span className="tech-headline-count">03</span> space launch 101</div>
                     <div className="tech-cont-lo">
                         <div className="tech-img-cont">
                             <img src={activeTech.techImgLandscape} className="tech-image mob-tab" alt="spaceport-landscape" />

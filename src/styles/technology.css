@@ -5,7 +5,14 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 100px;
+    padding: 100px 0 0 0;
+}
+
+.tech-headline-count {
+    font-weight: 900;
+    font-size: 18px;
+    color: gray;
+    margin-right: 5px;
 }
 
 .tech-img-cont {
@@ -25,10 +32,14 @@
 }
 
 .tech-nav {
-    border: 1px solid #FFFFFF;
+    border: 1px solid gray;
     border-radius: 50%;
     padding: 5px 14px;
     color: #FFFFFF;
+}
+
+.tech-nav:hover {
+    border: 1px solid white;
 }
 
 .tech-nav-active {
@@ -88,7 +99,10 @@
     }
     .tech-headline {
         text-align: start;
-        padding: 140px 0 10px 30px;
+        padding: 130px 0 0 20px;
+        font-size: 20px;
+    }
+    .tech-headline-count {
         font-size: 20px;
     }
     .tech-about {
@@ -106,21 +120,24 @@
         display: none;
     }
     .tech-headline {
-        padding-top: 180px;
-        padding-left: 100px;
         text-align: start;
-        font-size: 25px;
+        font-size: 22px;
+        padding: 160px 0 20px 110px;
+    }
+    .tech-headline-count {
+        font-size: 22px;
     }
     .tech-cont-lo {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
-        gap: 120px;
+        padding: 0 0 0 110px;
+        gap: 50px;
     }
     .tech-det-lo {
         display: flex;
-        padding-left: 80px;
-        gap: 80px
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
     }
     .tech-navs {
         flex-direction: column;
@@ -133,14 +150,14 @@
         text-align: start;
     }
     .tech-nav {
-        padding: 15px 30px;
-        font-size: 25px;
+        padding: 14px 28px;
+        font-size: 22px;
         text-align: center;
         cursor: pointer;
     }
     .tech-nav-active {
-        padding: 15px 30px;
-        font-size: 25px;
+        padding: 14px 28px;
+        font-size: 22px;
     }
     .tech-name {
         font-size: 40px;
