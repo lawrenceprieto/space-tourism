@@ -14,23 +14,7 @@ Users should be able to:
 
 ### Screenshot
 
-#### Desktop size: 
-![](./src/assets/st-images-solution/st-desktop-1.png)
-![](./src/assets/st-images-solution/st-desktop-2.png)
-![](./src/assets/st-images-solution/st-desktop-3.png)
-![](./src/assets/st-images-solution/st-desktop-4.png)
-
-#### tablet size: 
-![](./src/assets/st-images-solution/st-tablet-1.png)
-![](./src/assets/st-images-solution/st-tablet-2.png)
-![](./src/assets/st-images-solution/st-tablet-3.png)
-![](./src/assets/st-images-solution/st-tablet-4.png)
-
-#### tablet size: 
-![](./src/assets/st-images-solution/st-mobile-1.png)
-![](./src/assets/st-images-solution/st-mobile-2.png)
-![](./src/assets/st-images-solution/st-mobile-3.png)
-![](./src/assets/st-images-solution/st-mobile-4.png)
+![](./src/assets/space-tourism.gif)
 
 ### Links
 
