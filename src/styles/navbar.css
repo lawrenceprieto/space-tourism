@@ -43,13 +43,13 @@
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 3px;
-    color: gainsboro;
+    color: rgba(220, 220, 220, 0.849);
     font-weight: lighter;
     font-family: 'Barlow Condensed', sans-serif;
 }
 
 .nav-num {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 18px;
     margin-right: 7px;
 }
@@ -123,6 +123,10 @@
     }
     .navbar ul li a {
         text-wrap: nowrap;
+    }
+    .navbar ul li a:hover {
+        padding-bottom: 25px;
+        border-bottom: 3px solid gray;
     }
     .nav-num {
         font-weight: 900;
