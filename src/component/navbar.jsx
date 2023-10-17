@@ -6,16 +6,16 @@ function NavBar() {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const navs = [
-        { name: "Home", linkTo: "/" },
-        { name: "Destination", linkTo: "/destination" },
-        { name: "Crew", linkTo: "/crew" },
-        { name: "Technology", linkTo: "/technology" },
+        { name: "Home", path: "/" },
+        { name: "Destination", path: "/destination" },
+        { name: "Crew", path: "/crew" },
+        { name: "Technology", path: "/technology" },
     ]; 
 
     function handleNav(index) {
         setActiveIndex(index);
     }
-
+    // console.log(index);
     return(
         <>
             <div className="header">
@@ -25,7 +25,7 @@ function NavBar() {
                         {
                             navs.map((nav,index) => (
                                 <li key={index}>
-                                    <Link to={nav.linkTo} className={index === activeIndex ? "active-navbar" : null} 
+                                    <Link to={nav.path} className={index === activeIndex ? "active-navbar" : null} 
                                         onClick={() => handleNav(index)} ><span className="nav-num">0{index}</span> {nav.name}
                                     </Link>
                                 </li>

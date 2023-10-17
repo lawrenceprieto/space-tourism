@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/space-tourism">
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<Homepage />} />
